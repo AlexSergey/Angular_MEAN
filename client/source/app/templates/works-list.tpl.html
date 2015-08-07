@@ -1,0 +1,28 @@
+<div ng-init="initPage()">
+    <h2>Works List</h2>
+    <ul class="list">
+        <li ng-repeat="work in workList" data-index="{{work._id}}" class="item">
+            <a ui-sref="work({work_id: work._id})">Name : {{work.name}} ||</a>
+            <em>Description : {{work.description}}</em>
+            <a ng-click="delete(work._id)" class="delete">X</a>
+            <a ng-click="showUpdate($index)" class="update">Update</a>
+            <div ng-show="update[$index]" class="updatePanel">
+                <input type="text" ng-model="work.name" />
+                <input type="text" ng-model="work.age" />
+                <a ng-click="updateWork(work._id, {name: work.name, age: work.age})" class="update-btn">Update</a>
+            </div>
+        </li>
+    </ul>
+    <form class="form">
+        <p>
+            <input type="text" ng-model="model.name" placeholder="name" />
+        </p>
+        <p>
+            <textarea name="" id="" cols="30" rows="10" ng-model="model.description"></textarea>
+        </p>
+        <p>
+            <button class="send" ng-click="send()">SEND</button>
+        </p>
+        <h3>{{done}}</h3>
+    </form>
+</div>

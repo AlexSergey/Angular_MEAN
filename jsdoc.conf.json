@@ -1,0 +1,28 @@
+{
+    "source": {
+        "include": ["README.md"],
+        "includePattern": ".+\\.js?$",
+        "excludePattern": "(^|\\/|\\\\)_"
+    },
+    "opts": {
+        "destination": "./documentation/",
+        "private": true,
+        "recurse": true
+    },
+    "templates": {
+        "logo": "./images/logo_angular.png",
+        "logoSignature": "Documentation",
+        "styles": {
+            "header": {
+                "color": "#ccc"
+            }
+        },
+        "default": {
+            "staticFiles": {
+                "include": ["./jsdocs.settings/files/"]
+            },
+            "layoutFile": "./jsdocs.settings/layout.tmpl"
+        },
+        "copyright": "&copy; Aleksandrov Sergey, ANGULAR BOILERPLATE 1.0"
+    }
+}
