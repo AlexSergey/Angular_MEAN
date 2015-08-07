@@ -2,7 +2,7 @@
 
  * ${name} (${url})
 
- * Copyright ${year} - ${company}.
+ * Copyright ${year} - ${company}
 
  */
 

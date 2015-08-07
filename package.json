@@ -1,5 +1,5 @@
 {
-  "name": "MyProject",
+  "name": "AngularMEAN",
   "version": "0.1.0",
   "devDependencies": {
     "angular-mocks": "^1.4.3",
